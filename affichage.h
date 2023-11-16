@@ -1,19 +1,17 @@
 #include "structures.h"
 
-void afficherLigne(int damier[10][10], int ligne, int colonne);
+void afficherLigne(int damier[][], int ligne, int colonne);
 
-void afficherDamier(int damier[10][10], int ligne, int colonne);
+void afficherDamier(int damier[][], int ligne, int colonne);
 
-void initialiserDamier(Damier *jeu);
+void initialiserDamier(Damier *damier, int ligne, int colonne);
 
-// afficherAide
-// afficherCoup
-// afficherDamier
-// afficherLigne
-// chargerPartie
-// afficherPlateau :
-// quitterJeu
-// afficherRafle
-// sauvegarderPartie
+void affiche_choixcoup(Damier *damier, Rafle *rafle, int ncouleur, int n);
 
-// initialiserDamier
+void afficherAide();
+void afficherCoup();
+void chargerPartie();
+void afficherPlateau();
+void quitterJeu();
+void afficherRafle();
+void sauvegarderPartie();
